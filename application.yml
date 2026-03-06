@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    prefer-ip-address: true   # Gateway will register using IP instead of hostname
+
+  client:
+    register-with-eureka: true   # Register this service in Eureka
+    fetch-registry: true         # Fetch list of services from Eureka
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka   # Eureka server URL
+
